@@ -224,12 +224,12 @@ fun convertirNumeroATexto(numero: Int): String = when (numero) {
     10 -> "diez"
     11 -> "once"
     12 -> "doce"
+    13 -> "trece"
+    14 -> "catorce"
     else -> numero.toString()
 }
 
 fun obtenerNombreAudioMinutoEspecial(minutos: Int): String = when (minutos) {
-    13 -> "trece"
-    14 -> "catorce"
     16 -> "dieciseis"
     17 -> "diecisiete"
     18 -> "dieciocho"
