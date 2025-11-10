@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
-// 🔧 Convertidor manual de Color a AnimationVector4D (para Compose viejas)
+
 private val ColorToVectorConverter: TwoWayConverter<Color, AnimationVector4D> =
     TwoWayConverter(
         convertToVector = { color ->

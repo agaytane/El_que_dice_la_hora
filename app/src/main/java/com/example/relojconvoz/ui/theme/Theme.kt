@@ -12,13 +12,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.compose.material3.Text
 
-// 🎨 Colores personalizados
+
 val AzulOscuro = Color(0xFF001F3F)
 val AzulClaro = Color(0xFF0074D9)
 val Blanco = Color(0xFFFFFFFF)
 val GrisClaro = Color(0xFFDDDDDD)
 
-// 🌙 Esquemas de color
+
 private val DarkColorScheme = darkColorScheme(
     primary = AzulClaro,
     secondary = AzulOscuro,
@@ -41,13 +41,13 @@ private val LightColorScheme = lightColorScheme(
     onSurface = Color.Black
 )
 
-// Tipografía simple por defecto (ajusta si tienes fuentes personalizadas)
-val AppTypography = Typography() // puedes personalizar esto
 
-// Shapes por defecto (ajusta si quieres)
+val AppTypography = Typography()
+
+
 val AppShapes = Shapes()
 
-// 🎭 Función de tema principal
+
 @Composable
 fun RelojConVozTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
@@ -63,8 +63,7 @@ fun RelojConVozTheme(
     )
 }
 
-// Añade aquí estilos/estilos de texto reutilizables si los necesitas
-// Ejemplo de estilos que usaste en MainActivity (si no existen aún)
+
 @Composable
 fun EstiloHora() = androidx.compose.material3.MaterialTheme.typography.displayLarge
 

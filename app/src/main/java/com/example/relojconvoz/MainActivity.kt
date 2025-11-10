@@ -104,11 +104,11 @@ fun UIPrincipal() {
 
 fun obtenerHoraActual12Horas(): String {
     val calendar = Calendar.getInstance()
-    val hour = calendar.get(Calendar.HOUR) // 0-11
+    val hour = calendar.get(Calendar.HOUR)
     val minute = calendar.get(Calendar.MINUTE)
     val amPm = if (calendar.get(Calendar.AM_PM) == Calendar.AM) "AM" else "PM"
 
-    // Convertir 0 -> 12 para el formato 12 horas
+
     val displayHour = if (hour == 0) 12 else hour
 
     // Formato HH:MM AM/PM
